@@ -1,0 +1,156 @@
+body{
+  margin: 0;
+  font-family: 'Montserrat',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color:#ccc;
+}
+h1,h5{
+	margin:0;
+}
+h2{
+	margin-top:0;
+}
+h4{
+	margin-bottom:1.1rem;
+}
+#container{
+	background-color:#ca9a7d;
+	max-width:980px;
+	margin:auto;
+}
+#container-header{
+	font-family: 'Cantarell', sans-serif;
+	padding: 2rem 3rem 0rem;
+}
+#container-body{
+	background-color:#fff;
+	padding: 2rem 3rem;	
+}
+#container-intro{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+	width:100%;
+	height:100%;
+	max-height:650px;
+}
+.container-intro-button{
+	width: 40%;	
+    border-radius: 50px;
+    font-size: 4rem;
+    font-weight:600;
+    color:#9a4e00;
+    background-color: #ccccccad;
+    text-align:center;
+}
+.container-intro-button:hover{
+    background-color: #ddd;
+    color:#b55c00;
+}
+.container-intro-button a,.container-intro-button a:visited{
+	color:#9a4e00;
+	text-decoration:none;
+}
+.intro{
+	background:url('../img/intro.jpg') no-repeat;
+	background-size: 100%;	
+}
+.image-rounded{	
+	border-radius:10%;
+}
+figure{
+	margin:30px 0px;
+	position:relative;
+	flex-basis:50%;
+	min-width:0;
+	min-height:0;
+	overflow:hidden;
+}
+figure > img{
+	display:block;
+
+	margin-left:auto;
+	margin-right:auto;
+	max-width:600px;
+}
+.inner-figcaption{
+	position:absolute;
+	bottom:10px;
+	left:160px;
+	color:#fff;
+	font-weight:600;
+}
+.image-rounded-caption{
+	margin-left:230px;
+	font-size:90%;
+}
+#pictures {
+	display:flex;
+	align-items:center;
+	background-color:#b3d5ff;
+	padding:.5rem 0;	
+}
+#pictures > div{
+	margin:.25rem;
+	position:relative;
+}
+#pictures > div > img, .responsive{
+	width:100%;
+	height:auto;
+	max-width:600px;
+}
+#pictures p{
+	margin:0;
+	font-size:90%;
+	position:absolute;
+	bottom:10;
+	left:10;
+	font-weight:600;
+	color:#fff;		
+}
+#navbar ul{
+	padding-left:0;
+}
+#navbar ul li:nth-child(2) {
+    padding: 0 3rem;
+}
+#navbar ul li{
+	display:inline;
+}
+#navbar ul li a{
+	text-decoration:none;
+	font-size:1.1rem;
+	color:#212529;
+	
+}
+#navbar ul li a:hover{
+	color:#69737d;	
+}
+@media (max-width:576px){
+	#pictures {
+		display:flex;		
+		flex-wrap:wrap;
+		justify-content:center;		
+	}
+	#container-header{
+		padding: 1.5rem 2rem 1.5rem;
+	}
+	#container-body{
+		background-color:#fff;
+		padding: 2rem 1.3rem;
+	}
+	#pictures p{
+		font-size:85%;
+		bottom:5;
+		left:5;
+		font-weight:600;
+		color:#fff;		
+	}
+	#navbar ul li:nth-child(2) {
+    padding: 0 1.8rem;
+	}
+}
